@@ -4,17 +4,17 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    style="@style/screen"
     tools:context=".activites.CategoryMealsActivity">
 
 
     <TextView
+        style="@style/text_accent"
         android:id="@+id/tv_categoty_count"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/_5sdp"
         android:fontFamily="@font/myfont"
-        android:text="TextView"
-        android:textColor="@color/accent"
+        android:text="@string/category_title"
         android:textSize="@dimen/_13sdp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

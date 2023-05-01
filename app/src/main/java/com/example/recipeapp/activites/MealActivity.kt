@@ -75,7 +75,7 @@ class MealActivity : AppCompatActivity() {
 
                 binding.tvCategory.text = "Category: ${meal!!.strCategory}"
                 binding.tvArea.text = "Area: ${meal!!.strArea}"
-                binding.tvInstractionText.text = meal.strInstructions
+                binding.tvInstractionText?.text = meal.strInstructions
                 youtubeLink = meal.strYoutube
             }
         })
@@ -99,7 +99,7 @@ class MealActivity : AppCompatActivity() {
     }
 
     private fun loadingCase(){
-        binding.progessBar.visibility = View.VISIBLE
+        binding.progressBar.visibility = View.VISIBLE
         binding.addToFavorite.visibility = View.INVISIBLE
         binding.instraction.visibility = View.INVISIBLE
         binding.tvCategory.visibility = View.INVISIBLE
@@ -108,7 +108,7 @@ class MealActivity : AppCompatActivity() {
     }
 
     private fun onResponseCase(){
-        binding.progessBar.visibility = View.INVISIBLE
+        binding.progressBar.visibility = View.INVISIBLE
         binding.addToFavorite.visibility = View.VISIBLE
         binding.instraction.visibility = View.VISIBLE
         binding.tvCategory.visibility = View.VISIBLE

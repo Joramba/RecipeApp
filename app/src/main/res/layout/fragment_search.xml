@@ -22,14 +22,18 @@
         <EditText
             android:id="@+id/ed_search_box"
             android:layout_width="0dp"
-            android:layout_height="@dimen/_35sdp"
+            android:layout_height="@dimen/_45sdp"
             android:layout_weight="1"
             android:background="@drawable/search_box_background"
-            android:hint="Search Meals"
+            android:hint="@string/search_bar_placeholder"
             android:inputType="text"
             android:paddingStart="15dp"
             android:paddingEnd="15dp"
-            android:maxLines="1"/>
+            android:maxLines="1"
+            android:textColorHint="@color/black"
+            android:textColor="@color/black"
+            android:autofillHints="@string/search_bar_hint"
+            />
 
         <ImageView
             android:id="@+id/img_search_arrow"
@@ -38,6 +42,7 @@
             android:src="@drawable/arrow"
             app:tint="@color/g_grey"
             android:layout_gravity="center"
+            android:contentDescription="@string/search_bar_button"
             />
 
     </LinearLayout>

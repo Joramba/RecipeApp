@@ -13,9 +13,11 @@
         app:layout_constraintEnd_toEndOf="parent"
         android:src="@color/accent"
         android:scaleType="fitCenter"
+        android:contentDescription="@string/img_description"
         />
     
     <TextView
+        style="@style/text_black"
         android:id="@+id/tv_category_name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -23,8 +25,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         android:textSize="@dimen/_14ssp"
-        android:text="Category Name"
-        android:textColor="@color/black"
         android:fontFamily="@font/myfont"
         android:layout_marginTop="@dimen/_3sdp"
         />

@@ -4,6 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/screen"
     tools:context=".fragments.HomeFragment">
 
     <androidx.core.widget.NestedScrollView
@@ -28,31 +29,34 @@
 
                 <TextView
                     android:id="@+id/tv_home"
-                    android:layout_weight="3"
-                    android:layout_width="wrap_content"
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
+                    android:layout_weight="3"
                     android:fontFamily="@font/myfont"
-                    android:text="Home"
+                    android:text="@string/home_title"
                     android:textColor="@color/accent"
                     android:textSize="@dimen/_25sdp"
-                    android:textStyle="bold"/>
+                    android:textStyle="bold" />
 
                 <ImageView
+                    style="@style/search_img"
                     android:id="@+id/img_search"
                     android:layout_width="@dimen/_30sdp"
                     android:layout_height="match_parent"
                     android:scaleType="centerCrop"
-                    android:src="@drawable/icon"/>
+                    android:src="@drawable/icon"
+                    android:contentDescription="@string/search_img_description"
+                    />
             </LinearLayout>
 
             <TextView
+                style="@style/text_black"
                 android:id="@+id/tv_would_like_to_eat"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/_10sdp"
                 android:fontFamily="@font/myfont"
-                android:text="What would you like to it?"
-                android:textColor="@color/black"
+                android:text="@string/random_meal_title"
                 android:textSize="@dimen/_17ssp"
                 android:textStyle="bold"
                 app:layout_constraintTop_toBottomOf="@id/linear_header"
@@ -77,16 +81,17 @@
                     android:layout_height="match_parent"
                     android:background="@color/accent"
                     android:scaleType="centerCrop"
+                    android:contentDescription="@string/random_img_description"
                     />
             </androidx.cardview.widget.CardView>
 
             <TextView
+                style="@style/text_black"
                 android:id="@+id/tv_over_popular"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/myfont"
-                android:text="Over popular items"
-                android:textColor="@color/black"
+                android:text="@string/popular_meal_title"
                 android:textSize="@dimen/_17ssp"
                 android:textStyle="bold"
                 app:layout_constraintStart_toStartOf="@+id/tv_would_like_to_eat"
@@ -104,12 +109,12 @@
             </androidx.recyclerview.widget.RecyclerView>
 
             <TextView
+                style="@style/text_black"
                 android:id="@+id/tv_categories"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/myfont"
-                android:text="Categories"
-                android:textColor="@color/black"
+                android:text="@string/category_meal_title"
                 android:textSize="@dimen/_17ssp"
                 android:textStyle="bold"
                 app:layout_constraintStart_toStartOf="@+id/rec_view_meals_popular"

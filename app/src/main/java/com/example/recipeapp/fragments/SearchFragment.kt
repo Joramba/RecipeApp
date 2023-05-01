@@ -1,5 +1,6 @@
 package com.example.recipeapp.fragments
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
@@ -10,6 +11,7 @@ import androidx.lifecycle.Observer
 import androidx.lifecycle.lifecycleScope
 import androidx.recyclerview.widget.GridLayoutManager
 import com.example.recipeapp.activites.MainActivity
+import com.example.recipeapp.activites.MealActivity
 import com.example.recipeapp.adapters.MealsAdapter
 import com.example.recipeapp.databinding.FragmentSearchBinding
 import com.example.recipeapp.viewModel.HomeViewModel
@@ -46,6 +48,7 @@ class SearchFragment : Fragment() {
             searchMeals()
         }
 
+        onMealItemClick()
         observeSearchMealsLiveData()
 
         var searchJob: Job? = null
@@ -68,6 +71,16 @@ class SearchFragment : Fragment() {
         val searchQuery = binding.edSearchBox.text.toString()
         if(searchQuery.isNullOrEmpty()){
             viewModel.searchMeals(searchQuery)
+        }
+    }
+
+    private fun onMealItemClick() {
+        searchRecyclerViewAdapter.onItemClick = { meal ->
+            val intent = Intent(activity, MealActivity::class.java)
+            intent.putExtra(HomeFragment.MEAL_ID, meal.idMeal)
+            intent.putExtra(HomeFragment.MEAL_NAME, meal.strMeal)
+            intent.putExtra(HomeFragment.MEAL_THUMB, meal.strMealThumb)
+            startActivity(intent)
         }
     }
 

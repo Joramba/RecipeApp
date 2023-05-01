@@ -1,5 +1,23 @@
 <resources>
     <string name="app_name">RecipeApp</string>
-    <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="home_title">Home</string>
+    <string name="random_meal_title">What would you like to it?</string>
+    <string name="random_img_description">Random Meal</string>
+    <string name="popular_meal_title">Over popular items</string>
+    <string name="category_meal_title">Categories</string>
+
+    <string name="search_img_description">Search Image</string>
+    <string name="search_bar_placeholder">Search Meals</string>
+    <string name="search_bar_hint">Search</string>
+    <string name="search_bar_button">Search</string>
+
+    <string name="read_more">Read More</string>
+    <string name="img_description">Meal Image</string>
+
+    <string name="instructions">Instructions:</string>
+    <string name="like_img">Like Image</string>
+    <string name="youtube_img_description">Youtube Image</string>
+
+    <string name="category_title">Category</string>
 </resources>

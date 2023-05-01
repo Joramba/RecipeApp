@@ -112,7 +112,7 @@
                 app:layout_constraintTop_toBottomOf="@id/linear_layout" />
 
             <TextView
-                android:id="@+id/tv_instraction_text"
+                android:id="@+id/tv_instruction_text"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/_2sdp"
@@ -133,7 +133,7 @@
         android:layout_marginBottom="@dimen/_10sdp"/>
 
     <androidx.core.widget.ContentLoadingProgressBar
-        android:id="@+id/progess_bar"
+        android:id="@+id/progress_bar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:indeterminate="true"

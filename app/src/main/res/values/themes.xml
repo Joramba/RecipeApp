@@ -15,4 +15,19 @@
         <item name="android:windowLightStatusBar">true</item>
         <!-- Customize your theme here. -->
     </style>
+    
+    <style name="screen">
+        <item name="android:background">#FFF</item>
+        <item name="android:drawableTint">@color/g_black</item>
+    </style>
+    <style name="text_black">
+        <item name="android:textColor">@color/black</item>
+    </style>
+    <style name="text_accent">
+        <item name="android:textColor">@color/accent</item>
+    </style>
+    <style name="search_img">
+        <item name="android:tint">@color/black</item>
+    </style>
+    
 </resources>
