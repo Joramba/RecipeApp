@@ -19,5 +19,7 @@
     <string name="like_img">Like Image</string>
     <string name="youtube_img_description">Youtube Image</string>
 
+    <string name="share_img_description">Share Image</string>
+
     <string name="category_title">Category</string>
 </resources>

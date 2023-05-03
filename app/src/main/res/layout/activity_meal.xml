@@ -128,10 +128,23 @@
         android:id="@+id/img_youtube"
         android:layout_width="@dimen/_40sdp"
         android:layout_height="@dimen/_40sdp"
-        android:layout_gravity="bottom|center"
+        android:layout_gravity="bottom|start"
         android:src="@drawable/youtube"
         android:layout_marginBottom="@dimen/_10sdp"
+        android:layout_marginStart="@dimen/_60sdp"
+
         android:contentDescription="@string/youtube_img_description"
+        />
+
+    <ImageView
+        android:id="@+id/img_share"
+        android:layout_width="@dimen/_40sdp"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_gravity="bottom|end"
+        android:src="@drawable/share"
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:layout_marginEnd="@dimen/_60sdp"
+        android:contentDescription="@string/share_img_description"
         />
 
     <androidx.core.widget.ContentLoadingProgressBar

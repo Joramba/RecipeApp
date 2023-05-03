@@ -45,10 +45,22 @@ class MealActivity : AppCompatActivity() {
         observeMealDataLiveData()
 
         onYoutubeImageClick()
+        onShareButtonClick()
 
         onFavorityClick()
     }
 
+
+    private fun onShareButtonClick(){
+        binding.imgShare?.setOnClickListener {
+            val message: String = "Meal Name: " + binding.collapsingToolBar.title as String + "\n"+ "Instruction: \n" + binding.tvInstractionText?.text as String
+            val intent= Intent()
+            intent.action=Intent.ACTION_SEND
+            intent.putExtra(Intent.EXTRA_TEXT, message)
+            intent.type="text/plain"
+            startActivity(Intent.createChooser(intent,"Share To:"))
+        }
+    }
     private fun onFavorityClick() {
         binding.addToFavorite.setOnClickListener{
             mealToSave?.let {
@@ -105,6 +117,7 @@ class MealActivity : AppCompatActivity() {
         binding.tvCategory.visibility = View.INVISIBLE
         binding.tvArea.visibility = View.INVISIBLE
         binding.imgYoutube.visibility = View.INVISIBLE
+        binding.imgShare?.visibility = View.INVISIBLE
     }
 
     private fun onResponseCase(){
@@ -114,5 +127,6 @@ class MealActivity : AppCompatActivity() {
         binding.tvCategory.visibility = View.VISIBLE
         binding.tvArea.visibility = View.VISIBLE
         binding.imgYoutube.visibility = View.VISIBLE
+        binding.imgShare?.visibility = View.VISIBLE
     }
 }
