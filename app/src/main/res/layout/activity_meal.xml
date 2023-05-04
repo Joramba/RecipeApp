@@ -120,6 +120,7 @@
                 app:layout_constraintTop_toBottomOf="@+id/instraction"
                 android:layout_marginTop="@dimen/_2sdp"
                 />
+
         </androidx.constraintlayout.widget.ConstraintLayout>
 
     </androidx.core.widget.NestedScrollView>
@@ -132,7 +133,6 @@
         android:src="@drawable/youtube"
         android:layout_marginBottom="@dimen/_10sdp"
         android:layout_marginStart="@dimen/_60sdp"
-
         android:contentDescription="@string/youtube_img_description"
         />
 
@@ -147,6 +147,8 @@
         android:contentDescription="@string/share_img_description"
         />
 
+
+
     <androidx.core.widget.ContentLoadingProgressBar
         android:id="@+id/progress_bar"
         android:layout_width="match_parent"
@@ -156,5 +158,4 @@
         app:layout_anchorGravity="bottom"
         android:visibility="gone"
         />
-
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
