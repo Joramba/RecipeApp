@@ -5,6 +5,7 @@ import android.net.Uri
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
+import android.widget.FrameLayout
 import android.widget.Toast
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
@@ -13,6 +14,7 @@ import com.example.recipeapp.R
 import com.example.recipeapp.databinding.ActivityMealBinding
 import com.example.recipeapp.db.MealDatabase
 import com.example.recipeapp.fragments.HomeFragment
+import com.example.recipeapp.fragments.TimerFragment
 import com.example.recipeapp.pojo.Meal
 import com.example.recipeapp.viewModel.MealViewModel
 import com.example.recipeapp.viewModel.MealViewModelFactory
@@ -44,10 +46,21 @@ class MealActivity : AppCompatActivity() {
         mealMvvm.getMealDatail(mealId)
         observeMealDataLiveData()
 
+        createTimer()
         onYoutubeImageClick()
         onShareButtonClick()
-
         onFavorityClick()
+    }
+
+    private fun createTimer() {
+        val fragmentContainer = binding.fragmentContainer
+        val myFragment = TimerFragment()
+
+        fragmentContainer?.id?.let {
+            supportFragmentManager.beginTransaction()
+                .add(it, myFragment)
+                .commit()
+        }
     }
 
 

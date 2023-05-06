@@ -96,20 +96,27 @@
                     />
             </LinearLayout>
 
-            <TextView
-                style="@style/text_black"
-                android:id="@+id/instraction"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/instructions"
+            <FrameLayout
+                android:id="@+id/fragment_container"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/linear_layout"
-                android:layout_marginTop="@dimen/_5sdp"
+                app:layout_constraintTop_toTopOf="@+id/linear_layout" />
+
+            <TextView
+                android:id="@+id/instraction"
+                style="@style/text_black"
+                android:layout_width="122dp"
+                android:layout_height="34dp"
                 android:layout_marginStart="@dimen/_10sdp"
-                android:textStyle="bold"
+                android:layout_marginTop="@dimen/_5sdp"
                 android:fontFamily="@font/myfont"
+                android:text="@string/instructions"
                 android:textSize="@dimen/_15ssp"
-                 />
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/fragment_container" />
 
             <TextView
                 style="@style/text_black"
