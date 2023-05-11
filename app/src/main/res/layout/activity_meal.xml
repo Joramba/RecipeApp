@@ -105,6 +105,30 @@
                 app:layout_constraintTop_toTopOf="@+id/linear_layout" />
 
             <TextView
+                android:id="@+id/ingredients"
+                style="@style/text_black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/myfont"
+                android:text="@string/Ingredients"
+                android:textSize="@dimen/_15ssp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/fragment_container" />
+
+            <TextView
+                style="@style/text_black"
+                android:id="@+id/tvIngText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="@+id/ingredients"
+                app:layout_constraintTop_toBottomOf="@+id/ingredients"
+                android:layout_marginTop="@dimen/_2sdp"
+                />
+
+            <TextView
                 android:id="@+id/instraction"
                 style="@style/text_black"
                 android:layout_width="122dp"
@@ -116,7 +140,7 @@
                 android:textSize="@dimen/_15ssp"
                 android:textStyle="bold"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/fragment_container" />
+                app:layout_constraintTop_toBottomOf="@id/tvIngText" />
 
             <TextView
                 style="@style/text_black"
