@@ -7,22 +7,11 @@
         <deviceKey>
           <Key>
             <type value="VIRTUAL_DEVICE_PATH" />
-            <value value="C:\Users\Lenovo\.android\avd\Nexus_6P_API_33.avd" />
+            <value value="C:\Users\Lenovo\.android\avd\Nexus_9_API_33.avd" />
           </Key>
         </deviceKey>
       </Target>
     </runningDeviceTargetSelectedWithDropDown>
-    <targetSelectedWithDropDown>
-      <Target>
-        <type value="QUICK_BOOT_TARGET" />
-        <deviceKey>
-          <Key>
-            <type value="VIRTUAL_DEVICE_PATH" />
-            <value value="C:\Users\Lenovo\.android\avd\Nexus_6P_API_33.avd" />
-          </Key>
-        </deviceKey>
-      </Target>
-    </targetSelectedWithDropDown>
-    <timeTargetWasSelectedWithDropDown value="2023-05-11T22:18:27.537879500Z" />
+    <timeTargetWasSelectedWithDropDown value="2023-05-11T22:34:09.302989500Z" />
   </component>
 </project>
